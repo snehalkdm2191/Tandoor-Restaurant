@@ -21,9 +21,14 @@ export default function InputField({ onChange, options, state }) {
             onChange={() => onChange(key, inputReference.current.value)}
           >
             <option value="Dish">Select Category</option>
-            <option value="Dish">Dish</option>
-            <option value="Drink">Drink</option>
-            <option value="Dessert">Dessert</option>
+            <option value="Appetizers">Appetizers</option>
+            <option value="Vegetarian">Vegetarian Delicacies</option>
+            <option value="Tandoori">Tandoori Specialties</option>
+            <option value="Chicken">Chicken Specialties</option>
+            <option value="Lamb">Lamb and Beef Specialties</option>
+            <option value="Seafood">Seafood Specialties</option>
+            <option value="Desserts">Tempting Desserts</option>
+            <option value="Drinks">Drinks</option>
           </select>
         </div>
       );

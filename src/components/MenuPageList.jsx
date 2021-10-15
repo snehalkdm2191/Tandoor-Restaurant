@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useParams, Link } from "react-router-dom";
 //Project files
 import { useMenu } from "../state/MenuProvider";
@@ -8,7 +8,7 @@ export default function MenuPageList() {
   const { bbqMenu } = useMenu();
   
   const FoodDetails = bbqMenu.filter((item) => item.type === id);
-  console.log(id + "FoodDetails" + FoodDetails);
+
   return (
     <div className="category-list container">
       <h2>Super Delicious Menu</h2>
@@ -50,7 +50,7 @@ export default function MenuPageList() {
             </Link>
           </div>
         </div>
-      ))}
+      ))} 
     </div>
   );
 }
