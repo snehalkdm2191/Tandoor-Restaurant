@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 //Project files
 import { useMenu } from "../state/MenuProvider";
 

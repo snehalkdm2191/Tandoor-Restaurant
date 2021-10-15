@@ -36,7 +36,7 @@ export default function App() {
     } catch {
       setStatus(2);
     }
-  }, []);
+  }, [dispatch]);
 
   useEffect(() => fetchData(PATH), [fetchData]);
 

@@ -7,6 +7,7 @@ export default function ProductDetails({ productData }) {
         <>
           <h2>{product.name}</h2>
           <p>{product.description}</p>
+          <h6 className="price-data">Price : {product.price} Sek</h6>
         </>
       ))}
     </div>
