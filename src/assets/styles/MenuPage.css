@@ -1,0 +1,13 @@
+#menu-section{
+    display: grid;
+    justify-items: center;
+    background-color: #363233;
+}
+.hero-img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    overflow: hidden;
+    max-height: 500px;
+    position: relative;
+}

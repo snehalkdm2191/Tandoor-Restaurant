@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600&display=swap');
+
+@import url(./AdminPanel.css);
+@import url('./Hero.css');
+@import url('./Home.css');
+@import url('./Category.css');
+@import url('./MenuPage.css');
+@import url('./Product.css');
+@import url('./Contact.css');
+@import url('./Footer.css');

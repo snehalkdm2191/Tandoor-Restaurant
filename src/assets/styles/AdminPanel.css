@@ -1,0 +1,22 @@
+.menu-frm{
+    margin: 0 auto;
+    width:50%;
+    margin-top: 6%;
+}
+.frm-img{
+    text-align: center;
+}
+.frm-img img{
+    width:40%;
+}
+.edit-note{
+    color: red;
+}
+.price-data{
+    color:#666;
+    font-weight:bold;
+}
+.btn-frm{
+    margin-left: 10%;
+    background-color: #FF9901;
+}

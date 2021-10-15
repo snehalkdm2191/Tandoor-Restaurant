@@ -1,0 +1,32 @@
+[
+  {
+    "key": "type",
+    "label": "Type",
+    "placeholder": "Dish",
+    "type": "text"
+  },
+  {
+    "key": "name",
+    "label": "Name",
+    "placeholder": "bbq dish",
+    "type": "text"
+  },
+  {
+    "key": "description",
+    "label": "Description",
+    "placeholder": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    "type": "text"
+  },
+  {
+    "key": "imgUrl",
+    "label": "Image Link",
+    "placeholder": "www.google.com",
+    "type": "text"
+  },
+  {
+    "key": "price",
+    "label": "Price",
+    "placeholder": "100",
+    "type": "text"
+  }
+]
