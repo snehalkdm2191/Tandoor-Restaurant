@@ -32,6 +32,7 @@ export default function Edit() {
   function onDelete(Menu) {
     id === "new-menu" ? alert("Please add menu..") : onDeleteMenu(Menu);
     history.push("/admin");
+    window.location.reload();
   }
 
   function onChange(key, value) {
