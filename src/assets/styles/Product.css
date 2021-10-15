@@ -1,0 +1,69 @@
+#product-section{
+  width: 100%;
+  max-height: 400px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.product-img{
+  width: 100%;
+  height: 400px;
+  margin-top: 6%;
+}
+.product-details-section{
+  margin-top: 10%;
+    width: 50%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 1% 30px 1%;
+    position: relative;
+}
+.product-details-section h2{
+  text-align: center;
+  position: relative;
+  font-family: 'Lobster', cursive;
+  color:#023047;
+}
+.ingridient-section h6{
+  width:40%;
+  margin-left: 5px;
+}
+.ingridient-section img{
+  height: 30px;
+}
+.ingridient-section{
+    padding: 5px 0% 60px 45%;
+    position: relative;
+}
+.ingridient-list{
+  display: flex;
+  margin-bottom: 5px;
+}
+.product-details-section h4{
+  width:40%;
+  margin-left:43%;
+}
+.back-button{
+  height:50px;
+  background-color: #9a031e;
+  color:#fff;
+  margin-left: 45%;
+  margin-bottom: 50px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.back-button:hover{
+  background-color: #666;
+  color:#fff;
+}
+.product-para{
+  line-height: 1.5em;
+  height: 3em;       /* height is 2x line-height, so two lines will display */
+  overflow: hidden;
+}
+
+@media (max-width: 1100px) {
+  #product-section {
+    margin-top: 8%;
+  }
+}
