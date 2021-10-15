@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 
 export default function MenuItems({ item, to }) {
-  const { type, name, description, imgUrl, price } = item;
+  const { name, description, imgUrl, price } = item;
 
   return (
     <div className="row category-row">
