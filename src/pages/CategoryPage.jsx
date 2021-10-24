@@ -9,9 +9,11 @@ export default function CategoryPage() {
   const FoodDetails = [
     ...new Map(bbqMenu.map((item) => [item["type"], item])).values(),
   ];
+
   console.log(FoodDetails);
   return (
     <div id="Home-categories-section" className="row">
+      {/* No logic inside JSX (we mention this before) */}
       {FoodDetails.map((foodList) => (
         <div className="col-sm-6">
           <Link

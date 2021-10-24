@@ -2,18 +2,20 @@ import React, { useState } from "react";
 
 export default function ContactForm() {
   const [name, setName] = useState("");
+
+  // This looks complex, refactor the alert message into a const to make easy to read:
+  // Also use `` and ${} to compose complex messages
+  // If you need to add formating like new lines, then alert is not the right answer,
+  // make your own modal.
   function onClickHandler(e) {
-    if (name.trim() !== "") {
-      alert(
-        "Hi " +
-          name +
-          ",\n Booking Confirm. \n We are pleased to inform you that your reservation request has been received."
-      );
-    } else {
-      alert("Please fill the form..");
-    }
+    const messageGood = `Hi ${name}, + Booking confirmed, we are please to inform your request was received.`;
+    const messageBad = "lease fill the form...";
+
+    name.trim() !== "" ? alert(messageGood) : alert(messageBad);
   }
 
+  // Abstraction -1
+  // Create custom input components to abstract the input and label tags
   return (
     <form className="row">
       <div className="col-md-6">

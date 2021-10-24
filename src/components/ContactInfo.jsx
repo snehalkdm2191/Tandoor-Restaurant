@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import ContactForm from "./ContactForm";
 
 export default function ContactInfo() {
@@ -9,6 +9,7 @@ export default function ContactInfo() {
     <div className="contact-info">
       <div className="row">
         <div className="col-md-12 text-center contact-timings">
+          {/* this can be smaller components that are created on the fly using a json */}
           <h2>Opening Times</h2>
           <h5>Monday to Thursday</h5>
           <span>8:00 am - 9:00 pm</span>
@@ -17,6 +18,7 @@ export default function ContactInfo() {
           <h5>Sunday</h5>
           <span>8:00 am - 10:00 pm</span>
         </div>
+        {/* Book Your Table and Address could be 2 sub components also created via json */}
         <div className="col-md-12 contact-form">
           <h2>Book Your Table</h2>
           <ContactForm />
@@ -26,9 +28,12 @@ export default function ContactInfo() {
           <p>Stockholm,Sweden</p>
         </div>
         <div id="frame-container">
-            <iframe className="map-frame" src={googleMaps} title="Insta track map"></iframe>
-          </div>
-
+          <iframe
+            className="map-frame"
+            src={googleMaps}
+            title="Insta track map"
+          ></iframe>
+        </div>
       </div>
     </div>
   );

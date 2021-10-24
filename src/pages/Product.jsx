@@ -21,8 +21,9 @@ export default function Product() {
           />
         ))}
       </div>
-        <ProductDetails productData={productDetails} />
+      <ProductDetails productData={productDetails} />
 
+      {/* Don't add map logic inside JSX */}
       {productDetails.map((details) => (
         <Link
           className="btn back-button"

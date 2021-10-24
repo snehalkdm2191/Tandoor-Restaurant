@@ -5,7 +5,11 @@ import MenuList from "../components/MenuList";
 
 // Project files
 import { useMenu } from "../state/MenuProvider";
-import { createDocument, updateDocument, deleteDocument } from "../scripts/fireStore";
+import {
+  createDocument,
+  updateDocument,
+  deleteDocument,
+} from "../scripts/fireStore";
 
 export default function Edit() {
   // Global state
@@ -19,7 +23,13 @@ export default function Edit() {
   // Methods
   function findMenu(bbqMenu, id) {
     const existingMenu = bbqMenu.find((item) => item.id === id);
-    const newMenu = { type: "", name: "", description: "", imgUrl: "", price: "" };
+    const newMenu = {
+      type: "",
+      name: "",
+      description: "",
+      imgUrl: "",
+      price: "",
+    };
 
     return existingMenu === undefined ? newMenu : existingMenu;
   }
@@ -61,11 +71,20 @@ export default function Edit() {
       <h1>Edit page</h1>
       <span className="edit-note"> Note : Please add all the details.</span>
       <MenuList Menu={Menu} onChange={onChange} />
-      <br/>
-      <Link className="btn btn-frm" to="/admin"><i class="fas fa-arrow-circle-left"></i> Go back</Link>
-      <button className="btn btn-frm" onClick={() => onSave(Menu)}><i class="fas fa-save"> </i> Save Menu</button>  
-      <button className="btn btn-frm" onClick={() => onDelete(Menu)}><i class="fas fa-trash-alt"></i> Delete Menu</button>
-      <br/><br/>
+      <br />
+      <Link className="btn btn-frm" to="/admin">
+        <i class="fas fa-arrow-circle-left"></i> Go back
+      </Link>
+      <button className="btn btn-frm" onClick={() => onSave(Menu)}>
+        <i class="fas fa-save"> </i> Save Menu
+      </button>
+      <button className="btn btn-frm" onClick={() => onDelete(Menu)}>
+        <i class="fas fa-trash-alt"></i> Delete Menu
+      </button>
+      {/* No br tags to add space, use CSS -1 */}
+      {/* If this was a full-stack course, i would let it pass */}
+      <br />
+      <br />
     </div>
   );
 }

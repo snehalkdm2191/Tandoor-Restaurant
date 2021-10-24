@@ -36,17 +36,23 @@ export default function InputField({ onChange, options, state }) {
       return (
         <div class="form-group">
           {label}
-            <input
-              className="form-control"
-              onChange={() => onChange(key, inputReference.current.value)}
-              placeholder={placeholder}
-              ref={inputReference}
-              type={type}
-              value={state}
-              required
+          <input
+            className="form-control"
+            onChange={() => onChange(key, inputReference.current.value)}
+            placeholder={placeholder}
+            ref={inputReference}
+            type={type}
+            value={state}
+            required
+          />
+          <br />
+          <div className="frm-img">
+            <img
+              className="frm-img"
+              src={state === "" ? defaultUrl : state}
+              alt="User content"
             />
-            <br />
-            <div className="frm-img"><img className="frm-img" src={state === "" ? defaultUrl : state} alt="User content" /></div>
+          </div>
         </div>
       );
     default:

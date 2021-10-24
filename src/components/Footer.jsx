@@ -3,6 +3,7 @@ import imglinkedin from "../assets/images/linkedin.png";
 import imgFB from "../assets/images/facebook.png";
 import imgTwitter from "../assets/images/twitter.png";
 
+// You can refactor this footer with sub components reading the links from a json
 export default function Footer() {
   return (
     <div id="Footer">

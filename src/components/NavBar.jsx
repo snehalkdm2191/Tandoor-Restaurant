@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import logo from '../assets/images/logo.png'
+import logo from "../assets/images/logo.png";
 
 export default function NavBar() {
   const [nav, setNav] = useState(false);
@@ -14,10 +14,11 @@ export default function NavBar() {
   };
   window.addEventListener("scroll", changeBackground);
 
+  // You can make the component shorter using jsons for the navlinks
   return (
     <nav className={nav ? "nav active" : "nav"}>
       <a href="/" className="logo">
-        <img src={logo} alt="logo"/>
+        <img src={logo} alt="logo" />
       </a>
       <input type="checkbox" className="menu-btn" id="menu-btn" />
       <label className="menu-icon" for="menu-btn">
@@ -27,7 +28,7 @@ export default function NavBar() {
         <li>
           <NavLink
             exact
-            to='/category'
+            to="/category"
             className="nav-link"
             activeClassName="active-link"
           >
@@ -37,7 +38,7 @@ export default function NavBar() {
         <li>
           <NavLink
             exact
-            to='/contact'
+            to="/contact"
             className="nav-link"
             activeClassName="active-link"
           >
@@ -47,7 +48,7 @@ export default function NavBar() {
         <li>
           <NavLink
             exact
-            to='/admin'
+            to="/admin"
             className="nav-link"
             activeClassName="active-link"
           >

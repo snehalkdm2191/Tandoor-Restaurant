@@ -8,9 +8,9 @@ export default function MenuPage() {
   return (
     <div>
       <div id="menu-section">
-        <Hero section={id}/>
+        <Hero section={id} />
       </div>
-      <MenuPageList/>
+      <MenuPageList />
     </div>
   );
 }

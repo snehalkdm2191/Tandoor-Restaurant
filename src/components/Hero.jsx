@@ -3,6 +3,9 @@ import VideoPlayer from "./VideoPlayer";
 import contactImg from "../assets/images/contact.jpg";
 import HomeBg from "../assets/images/hero-bg.mp4";
 
+// Nesting -1
+// This component looks super complex.
+// You could create separate components and then call them on each case
 export default function Hero({ section }) {
   switch (section) {
     case "Home":

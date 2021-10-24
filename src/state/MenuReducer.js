@@ -1,4 +1,5 @@
 export default function MenuReducer(state, action) {
+  // Tip, write the cases in uppercase to avoid the confusion of it is: Create_menu (first word upper, second lower, etc)
   switch (action.type) {
     case "Create_Menu":
       return createMenu(state, action);

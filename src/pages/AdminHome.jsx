@@ -15,13 +15,15 @@ export default function AdminHome() {
   ));
 
   return (
+    // Naming: What does frm mean? Form?, Full right margin? -1
     <div className="menu-frm">
       <h1>Home page</h1>
       <Link className="btn btn-view" to="edit/new-menu">
         Add Menu
       </Link>
       {MenuItem}
-      <br/>
+      {/* Why there is a br at the end, add a padding top inside "menu-frm" */}
+      <br />
     </div>
   );
 }
