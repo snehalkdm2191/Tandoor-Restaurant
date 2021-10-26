@@ -13,31 +13,35 @@ export default function CategoryPage() {
   // No comments in production
   console.log("CategoryPage.jsx FoodDetails", FoodDetails);
 
+  // Component
+  const CategoryItems = FoodDetails.map((foodList, index) => (
+    <Link key={index} className="category-item" to={`/menu/${foodList.type}`}>
+      <h4>{foodList.type}</h4>
+      <img
+        src={require(`../assets/images/${foodList.type}.jpg`).default}
+        alt={foodList.type}
+      />
+    </Link>
+  ));
+
   return (
     <div id="Home-categories-section" className="row">
       {/* No logic inside JSX (we mention this before) */}
-      {FoodDetails.map((foodList) => (
-        <div className="col-sm-6">
-          <Link
-            to={{
-              pathname: `/menu/${foodList.type}`,
-              state: { id: foodList.type },
-            }}
-          >
-            <div className="type-overlay-text">
-              <h4 className="btn btn-category-type">{foodList.type}</h4>
-            </div>
-            <img
-              data-toggle="tooltip"
-              data-placement="top"
-              title={`Click here for ${foodList.type} menu.`}
-              className="category-image"
-              src={require(`../assets/images/${foodList.type}.jpg`).default}
-              alt={foodList.type}
-            />
-          </Link>
-        </div>
-      ))}
+      {CategoryItems}
     </div>
   );
 }
+
+/**
+ * .category-item {
+ *  // code for multi column layout (col-8)
+ * }
+ *
+ * .category-item h4 {
+ *  //
+ * }
+ *
+ * .category-item img {
+ *
+ * }
+ */

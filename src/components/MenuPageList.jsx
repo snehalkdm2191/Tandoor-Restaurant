@@ -13,8 +13,8 @@ export default function MenuPageList() {
   return (
     <div className="category-list container">
       <h2>Super Delicious Menu</h2>
-      {FoodDetails.map((foodList) => (
-        <div className="row category-row">
+      {FoodDetails.map((foodList, index) => (
+        <div key={index} className="row category-row">
           <div className="col-md-4">
             <div className="category-img-div">
               <Link

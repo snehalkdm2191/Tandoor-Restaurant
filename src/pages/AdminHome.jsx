@@ -23,7 +23,7 @@ export default function AdminHome() {
       <Link className="btn btn-view" to="edit/new-menu">
         Add Menu
       </Link>
-      {MenuItems}
+      {MenuItem}
       {/* Why there is a br at the end, add a padding top inside "menu-frm" */}
       <br />
     </div>
