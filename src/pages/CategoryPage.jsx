@@ -10,7 +10,9 @@ export default function CategoryPage() {
     ...new Map(bbqMenu.map((item) => [item["type"], item])).values(),
   ];
 
-  console.log(FoodDetails);
+  // No comments in production
+  console.log("CategoryPage.jsx FoodDetails", FoodDetails);
+
   return (
     <div id="Home-categories-section" className="row">
       {/* No logic inside JSX (we mention this before) */}
@@ -22,7 +24,7 @@ export default function CategoryPage() {
               state: { id: foodList.type },
             }}
           >
-            <div class="type-overlay-text">
+            <div className="type-overlay-text">
               <h4 className="btn btn-category-type">{foodList.type}</h4>
             </div>
             <img

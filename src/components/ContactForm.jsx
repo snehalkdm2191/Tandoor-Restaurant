@@ -19,51 +19,57 @@ export default function ContactForm() {
   return (
     <form className="row">
       <div className="col-md-6">
-        <div class="form-group">
-          <label for="exampleFormControlInput1">Name</label>
-          <input
-            class="form-control"
-            id="exampleFormControlInput1"
-            placeholder="Snehal"
-            onChange={(e) => setName(e.target.value)}
-          />
+        <div className="form-group">
+          <label>
+            Name
+            <input
+              className="form-control"
+              placeholder="Snehal"
+              onChange={(e) => setName(e.target.value)}
+            />
+          </label>
         </div>
-        <div class="form-group">
-          <label for="exampleFormControlTextarea1">Date</label>
-          <input
-            className="form-control"
-            type="date"
-            id="task-date"
-            name="task-date"
-          ></input>
+        <div className="form-group">
+          <label>
+            Date
+            <input
+              className="form-control"
+              type="date"
+              name="task-date"
+            ></input>
+          </label>
         </div>
-        <div class="form-group">
-          <label for="exampleFormControlTextarea1">Time</label>
-          <input
-            className="form-control"
-            type="date"
-            id="task-date"
-            name="task-date"
-          ></input>
+        <div className="form-group">
+          <label>
+            Time
+            <input
+              className="form-control"
+              type="date"
+              name="task-date"
+            ></input>
+          </label>
         </div>
       </div>
       <div className="col-md-6">
-        <div class="form-group">
-          <label for="exampleFormControlInput1">Email address</label>
-          <input
-            type="email"
-            class="form-control"
-            id="exampleFormControlInput1"
-            placeholder="tom@example.com"
-          />
+        <div className="form-group">
+          <label>
+            Email address
+            <input
+              type="email"
+              className="form-control"
+              placeholder="tom@example.com"
+            />
+          </label>
         </div>
-        <div class="form-group">
-          <label for="exampleFormControlTextarea1">Message</label>
-          <textarea
-            class="form-control"
-            id="exampleFormControlTextarea1"
-            rows="3"
-          ></textarea>
+        <div className="form-group">
+          <label>
+            Message
+            <textarea
+              className="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+            ></textarea>
+          </label>
         </div>
       </div>
       <button className="btn btn-dark btn-book" onClick={onClickHandler}>

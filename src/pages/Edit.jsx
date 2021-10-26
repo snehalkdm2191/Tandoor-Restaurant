@@ -73,13 +73,13 @@ export default function Edit() {
       <MenuList Menu={Menu} onChange={onChange} />
       <br />
       <Link className="btn btn-frm" to="/admin">
-        <i class="fas fa-arrow-circle-left"></i> Go back
+        <i className="fas fa-arrow-circle-left"></i> Go back
       </Link>
       <button className="btn btn-frm" onClick={() => onSave(Menu)}>
-        <i class="fas fa-save"> </i> Save Menu
+        <i className="fas fa-save"> </i> Save Menu
       </button>
       <button className="btn btn-frm" onClick={() => onDelete(Menu)}>
-        <i class="fas fa-trash-alt"></i> Delete Menu
+        <i className="fas fa-trash-alt"></i> Delete Menu
       </button>
       {/* No br tags to add space, use CSS -1 */}
       {/* If this was a full-stack course, i would let it pass */}

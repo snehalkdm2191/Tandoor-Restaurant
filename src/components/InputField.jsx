@@ -11,10 +11,10 @@ export default function InputField({ onChange, options, state }) {
   switch (key) {
     case "type":
       return (
-        <div class="form-group">
+        <div className="form-group">
           {label}
           <select
-            class="form-control"
+            className="form-control"
             name="type"
             id="type"
             ref={inputReference}
@@ -34,7 +34,7 @@ export default function InputField({ onChange, options, state }) {
       );
     case "imgUrl":
       return (
-        <div class="form-group">
+        <div className="form-group">
           {label}
           <input
             className="form-control"
@@ -57,7 +57,7 @@ export default function InputField({ onChange, options, state }) {
       );
     default:
       return (
-        <div class="form-group">
+        <div className="form-group">
           {label}
           <input
             className="form-control"
