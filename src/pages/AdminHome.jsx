@@ -10,7 +10,9 @@ export default function AdminHome() {
   const { bbqMenu } = useMenu();
 
   // Components
+  // This one should be MenuItems (plural) because is an array.
   const MenuItem = bbqMenu.map((item) => (
+    // This one should be MenuItem (singular) becuase is an single item
     <MenuItems key={item.id} item={item} to={`edit/${item.id}`} />
   ));
 
@@ -21,7 +23,7 @@ export default function AdminHome() {
       <Link className="btn btn-view" to="edit/new-menu">
         Add Menu
       </Link>
-      {MenuItem}
+      {MenuItems}
       {/* Why there is a br at the end, add a padding top inside "menu-frm" */}
       <br />
     </div>
